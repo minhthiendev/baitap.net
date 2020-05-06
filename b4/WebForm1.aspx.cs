@@ -20,13 +20,9 @@ namespace b4
 
             Int32 y = Int32.Parse(TextBox1.Text);
             
-            if (y % 400 == 0 || y % 4 == 0)
+            if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0))
             {
                 Label3.Text = y + " is a leap year";
-            }
-            else if (y % 100 == 0)
-            {
-                Label3.Text = y + " isn't a leap year";
             }
             else
             {
